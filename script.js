@@ -5,7 +5,7 @@ function carregar() {
     var hora = Number(horatxt.value)
     var msginicial = window.document.getElementById('msginicial')
     
-    msg.innerHTML = `Agora são ${hora} horas`
+    
 
     if (hora > 24 || hora < 0){
         window.alert('Digite um valor inteiro entre 0 e 24')
@@ -15,16 +15,19 @@ function carregar() {
         img.src = "imagens/manha.png"
         document.body.style.backgroundColor = "#F4C8AA"
         msginicial.style.color = 'brown'
+        msg.innerHTML = `Agora são ${hora} horas`
     }else if (hora >= 12 && hora <= 18) {
         //Boa tarde
         img.src = "imagens/tarde.png"
         document.body.style.backgroundColor = "#AA7374"
         msginicial.style.color = 'black'
+        msg.innerHTML = `Agora são ${hora} horas`
     }else {
         //Boa noite
         img.src = "imagens/noite.png"
         document.body.style.backgroundColor = "#403253"
         msginicial.style.color = 'white'
+        msg.innerHTML = `Agora são ${hora} horas`
         
     }
 
