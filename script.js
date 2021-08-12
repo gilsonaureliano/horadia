@@ -8,7 +8,7 @@ function carregar() {
     msg.innerHTML = `Agora são ${hora} horas`
 
     if (hora > 24){
-        window.alert = ('Digite um valor inteiro entre 0 e 24')
+        window.alert('Digite um valor inteiro entre 0 e 24')
     }
     else if (hora > 0 && hora < 12) {
         //Bom dia
