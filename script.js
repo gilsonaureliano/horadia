@@ -6,7 +6,11 @@ function carregar() {
     var msginicial = window.document.getElementById('msginicial')
     
     msg.innerHTML = `Agora são ${hora} horas`
-    if (hora > 0 && hora < 12) {
+
+    if (hora > 24){
+        window.alert = ('Digite um valor inteiro entre 0 e 24')
+    }
+    else if (hora > 0 && hora < 12) {
         //Bom dia
         img.src = "imagens/manha.png"
         document.body.style.backgroundColor = "#F4C8AA"
